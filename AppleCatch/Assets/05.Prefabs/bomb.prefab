@@ -90,7 +90,7 @@ MonoBehaviour:
   apple: {fileID: 0}
   bomb: {fileID: 0}
   basket: {fileID: 0}
-  dropSpeed: -0.03
+  dropSpeed: -0.001
 --- !u!135 &6535341484554464135
 SphereCollider:
   m_ObjectHideFlags: 0

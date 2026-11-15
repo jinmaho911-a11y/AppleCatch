@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEditor.VersionControl;
 using UnityEngine;
 
@@ -6,6 +7,8 @@ public class basketContoller : MonoBehaviour
     public AudioClip appleSE; //SE는 Sound Effect의 약자    
     public AudioClip bombSE; //SE는 Sound Effect의 약자
     AudioSource audio;
+
+    public GameObject GameManeger;
 
     private void Start()
     {
@@ -30,12 +33,14 @@ public class basketContoller : MonoBehaviour
     {
         if(other.gameObject.CompareTag("apple"))
         {
+            GameManeger.GetComponent<GameManeger>().GetAplle();
             Destroy(other.gameObject);
             Debug.Log("골인 성공!");
             audio.PlayOneShot(appleSE);
         }
         if (other.gameObject.CompareTag("bomb"))
         {
+            GameManeger.GetComponent<GameManeger>().GetBomb();
             Destroy(other.gameObject);
             Debug.Log("아야 쌰갈!");
             audio.PlayOneShot(bombSE);

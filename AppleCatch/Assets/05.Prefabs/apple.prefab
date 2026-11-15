@@ -90,7 +90,7 @@ MonoBehaviour:
   apple: {fileID: 8424945898696363318}
   bomb: {fileID: 0}
   basket: {fileID: 0}
-  dropSpeed: -0.03
+  dropSpeed: -0.01
 --- !u!54 &6981981595633297877
 Rigidbody:
   m_ObjectHideFlags: 0
