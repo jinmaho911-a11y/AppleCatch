@@ -1,8 +1,12 @@
 using UnityEditor.SceneManagement;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class iteamContoller : MonoBehaviour
 {
+    public GameObject apple;
+    public GameObject bomb;
+    public GameObject basket;
     public float dropSpeed = -0.03f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
@@ -19,9 +23,7 @@ public class iteamContoller : MonoBehaviour
                 Destroy(gameObject);
             }
         }
-
     }
 }
-
 //아이템은 아래로 떨어진다.
 //아이템들은 바닥보다 아래로 가서 y값이 -보다 작아질때 삭재

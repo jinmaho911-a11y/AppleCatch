@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\02.Scripts\iteamContoller.cs" />
+    <Compile Include="Assets\02.Scripts\itemGenerator.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\02.Scripts\basketContoller.cs" />
   </ItemGroup>
